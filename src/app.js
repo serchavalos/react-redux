@@ -25,27 +25,14 @@ const decks = (state, action) => {
   }
 };
 
-const store = Redux.createStore(Redux.combineReducers({
-  cards,
-  decks
-}));
+const store = Redux.createStore(Redux.combineReducers({ cards, decks }));
 
-store.subscribe(() => {
-  console.log(store.getState());
-});
+const App = (props) => {
+  return (
+    <div className='app'>
+      <h1>Hello React</h1>
+    </div>
+  );
+}
 
-store.dispatch({
-  type: 'ADD_CARD',
-  data: {
-    front: 'front',
-    back: 'back'
-  }
-});
-
-store.dispatch({
-  type: 'ADD_CARD',
-  data: {
-    front: 'front',
-    back: 'back'
-  }
-});
+ReactDom.render(<App />, document.getElementById('root'));
