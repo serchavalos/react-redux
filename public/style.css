@@ -8,6 +8,10 @@ html, body, #root, .app {
   overflow: hidden;
 }
 
+#root > div {
+  height: 100%;
+}
+
 .btn, button {
   border: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f1f1f1));
@@ -64,7 +68,8 @@ button.delete {
   background: #f6f7f8;
   border-right: 1px solid #eee;
   box-sizing: border-box;
-  height: calc(100% - 37px);
+  /* height: calc(100% - 37px);*/
+  height: 100%;
   width: 20%;
   padding: 25px;
   float: left;
