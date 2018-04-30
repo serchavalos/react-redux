@@ -1,5 +1,5 @@
 {
-  "name": "react-redux",
+  "name": "tutorial-react-redux",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,6 +16,12 @@
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
     "live-server": "^1.2.0",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
     "watchify": "^3.11.0"
   }
 }
